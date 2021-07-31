@@ -2,26 +2,23 @@
 
 ## Goal
 
-This project is a template for building Angular App linked to my favorite tools already configured.
 
-Obviously, the app is using the latest version of `angular` with `Sass` for the css.
-
-In addition, I added `prettier` and configured it for working well with `esLint`.
-For the test, I switch the basic Karma to `Jest` and for the e2e test, I configured `Cypress` that I find better.
-
-For the technical documentation, I am using `JSDoc`.
-
-The alias are configured inside the `tsconfig.json`.
 
 ## Plan of the presentation
 
 I explain with all the details how I build the project and my way of working.
 
+- [Experiences](#experiences)
 - [Documentation](#documentation)
 - [Organization](#organization)
 - [Development](#development)
 - [Running](#running)
 - [Commands](#commands)
+
+## Experiences
+
+- **Experience1**: Playing with the single FormsModule
+- **Experience2**: Playing with a FormGroup
 
 ## Documentation
 #### Code documentation
