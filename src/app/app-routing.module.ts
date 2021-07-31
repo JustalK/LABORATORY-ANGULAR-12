@@ -5,7 +5,8 @@ import Experience_0001 from '@pages/formGroup/formGroup.component';
 import Experience_0002 from '@pages/formControl/formControl.component';
 
 const routes: Routes = [
-  { path: '2', component: Experience_0002 },
+  { path: 'experience_0002', component: Experience_0002 },
+  { path: 'experience_0001', component: Experience_0001 },
   { path: '', component: Experience_0001 },
 ];
 
