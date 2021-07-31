@@ -2,13 +2,13 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
-import Experiment_0001 from '@pages/formGroup/formGroup.component';
-import SecondaryComponent from '@pages/secondary/secondary.component';
+import Experience_0001 from '@pages/formGroup/formGroup.component';
+import Experience_0002 from '@pages/formControl/formControl.component';
 import { AppRoutingModule } from '@app/app-routing.module';
 import { AppComponent } from '@app/app.component';
 
 @NgModule({
-  declarations: [AppComponent, Experiment_0001, SecondaryComponent],
+  declarations: [AppComponent, Experience_0001, Experience_0002],
   imports: [BrowserModule, FormsModule, ReactiveFormsModule, AppRoutingModule],
   providers: [],
   bootstrap: [AppComponent],

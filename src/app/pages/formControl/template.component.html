@@ -1,0 +1,6 @@
+<label for="title">Title: </label>
+<input id="title" type="text" [formControl]="title">
+<div>
+<span>Value: {{ title.value }}</span>
+</div>
+<button (click)="setValue()">Set the input to TEST</button>
