@@ -22,3 +22,24 @@
   </div>
 </form>
 <div>Form Status: {{ identityForm.status }}</div>
+<div *ngIf="firstName.invalid"
+    class="alert alert-danger">
+
+  <div *ngIf="firstName.errors?.required">
+    Name is required.
+  </div>
+  <div *ngIf="firstName.errors?.minlength">
+    Name must be at least 4 characters long.
+  </div>
+  <div *ngIf="firstName.errors?.forbiddenName">
+    Name cannot be Bob.
+  </div>
+</div>
+<div *ngIf="age.invalid" class="alert alert-danger">
+  <div *ngIf="age.errors?.required">
+    Age is required.
+  </div>
+  <div *ngIf="age.errors?.isMinor">
+    Age is under 18.
+  </div>
+</div>
