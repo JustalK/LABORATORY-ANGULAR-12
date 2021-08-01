@@ -1,0 +1,27 @@
+<form [formGroup]="identityForm" (ngSubmit)="callingFunction()">
+  <div>
+    <label>
+      First Name:
+      <input type="text" formControlName="firstName" />
+    </label>
+  </div>
+  <div>
+    <label>
+      Last Name:
+      <input type="text" formControlName="lastName" />
+    </label>
+  </div>
+  <div>
+    <label>
+      Age:
+      <input type="text" formControlName="age" />
+    </label>
+  </div>
+  <div>
+    <button type="submit">Submit Application</button>
+  </div>
+</form>
+<div>Form Status: {{ identityForm.status }}</div>
+<div *ngIf="identityForm.errors?.identity && (identityForm.touched || identityForm.dirty)" class="cross-validation-error-message alert alert-danger">
+    FirstName and LastName cannot be equal.
+</div>

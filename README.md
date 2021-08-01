@@ -19,6 +19,9 @@ I explain with all the details how I build the project and my way of working.
 
 - **Experience1**: Playing with the single FormsModule
 - **Experience2**: Playing with a FormGroup
+- **Experience3**: ?
+- **Experience4**: Validation on a reactive form (Custom validator and css classes)
+- **Experience5**: Cross validation over a form
 
 ## Documentation
 #### Code documentation
