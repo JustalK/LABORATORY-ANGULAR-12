@@ -7,8 +7,10 @@ import Experience_0003 from '@pages/nestedFormGroup/nestedFormGroup.component';
 import Experience_0004 from '@pages/validationForm/validationForm.component';
 import Experience_0005 from '@pages/crossValidationForm/crossValidationForm.component';
 import Experience_0006 from '@pages/asyncValidationForm/asyncValidationForm.component';
+import Experience_0007 from '@pages/httpCommunication/httpCommunication.component';
 
 const routes: Routes = [
+  { path: 'experience_0007', component: Experience_0007 },
   { path: 'experience_0006', component: Experience_0006 },
   { path: 'experience_0005', component: Experience_0005 },
   { path: 'experience_0004', component: Experience_0004 },

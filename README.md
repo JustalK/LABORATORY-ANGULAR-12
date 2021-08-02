@@ -2,8 +2,6 @@
 
 ## Goal
 
-
-
 ## Plan of the presentation
 
 I explain with all the details how I build the project and my way of working.
@@ -23,6 +21,7 @@ I explain with all the details how I build the project and my way of working.
 - **Experience4**: Validation on a reactive form (Custom validator and css classes)
 - **Experience5**: Cross validation over a reactive form
 - **Experience6**: Async validation over a reactive form
+- **Experience7**: Requesting a typed response
 
 ## Documentation
 #### Code documentation
