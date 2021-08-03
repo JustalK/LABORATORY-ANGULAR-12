@@ -8,8 +8,10 @@ import Experience_0004 from '@pages/validationForm/validationForm.component';
 import Experience_0005 from '@pages/crossValidationForm/crossValidationForm.component';
 import Experience_0006 from '@pages/asyncValidationForm/asyncValidationForm.component';
 import Experience_0007 from '@pages/httpCommunication/httpCommunication.component';
+import Experience_0008 from '@pages/interceptorRequests/interceptorRequests.component';
 
 const routes: Routes = [
+  { path: 'experience_0008', component: Experience_0008 },
   { path: 'experience_0007', component: Experience_0007 },
   { path: 'experience_0006', component: Experience_0006 },
   { path: 'experience_0005', component: Experience_0005 },
