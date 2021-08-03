@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { HttpParams } from '@angular/common/http';
 import { ConfigService } from './config.service';
 import { Config } from './config.interface';
 
@@ -21,6 +22,12 @@ export default class CustomComponent {
     });
   }
 
+  playWithParams() {
+    // Create a params for use
+    const params = new HttpParams().set('page', '1').set('test', '10').set('kevin', '1');
+    console.log(params.toString());
+  }
+
   showConfigResponse() {
     this.configService.getConfigResponse().subscribe((data) => {
       console.log(data);
@@ -29,6 +36,12 @@ export default class CustomComponent {
 
   showHttpJson() {
     this.configService.getHttpCall().subscribe((data) => {
+      console.log(data);
+    });
+  }
+
+  showHttpWithParamsJson() {
+    this.configService.getHttpWithParamsCall().subscribe((data) => {
       console.log(data);
     });
   }

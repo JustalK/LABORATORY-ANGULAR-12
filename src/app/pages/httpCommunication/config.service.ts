@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { HttpClient, HttpErrorResponse } from '@angular/common/http';
+import { HttpClient, HttpErrorResponse, HttpParams } from '@angular/common/http';
 import { retry, catchError } from 'rxjs/operators';
 import { throwError } from 'rxjs';
 import { Config } from './config.interface';
@@ -33,6 +33,12 @@ export class ConfigService {
     return this.http
       .jsonp('https://jsonplaceholder.typicode.com/todos/1', 'callback')
       .pipe(retry(3), catchError(this.handleError));
+  }
+
+  getHttpWithParamsCall() {
+    return this.http.get<Config>('https://jsonplaceholder.typicode.com/comments', {
+      params: new HttpParams().set('postId', 10),
+    });
   }
 
   getFailHttpCall() {
