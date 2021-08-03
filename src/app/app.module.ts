@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import { HttpClientModule, HttpClientJsonpModule } from '@angular/common/http';
+import { HttpClientModule, HttpClientJsonpModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 
 import Experience_0001 from '@pages/formGroup/formGroup.component';
 import Experience_0002 from '@pages/formControl/formControl.component';
@@ -13,6 +13,8 @@ import Experience_0007 from '@pages/httpCommunication/httpCommunication.componen
 import Experience_0008 from '@pages/interceptorRequests/interceptorRequests.component';
 import { AppRoutingModule } from '@app/app-routing.module';
 import { AppComponent } from '@app/app.component';
+
+import { NoopInterceptor } from '@pages/interceptorRequests/noopInterceptor.service';
 
 @NgModule({
   declarations: [
@@ -27,7 +29,7 @@ import { AppComponent } from '@app/app.component';
     Experience_0008,
   ],
   imports: [BrowserModule, FormsModule, ReactiveFormsModule, AppRoutingModule, HttpClientModule, HttpClientJsonpModule],
-  providers: [],
+  providers: [{ provide: HTTP_INTERCEPTORS, useClass: NoopInterceptor, multi: true }],
   bootstrap: [AppComponent],
 })
 export class AppModule {}
