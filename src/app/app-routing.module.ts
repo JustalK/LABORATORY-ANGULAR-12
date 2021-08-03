@@ -9,8 +9,10 @@ import Experience_0005 from '@pages/crossValidationForm/crossValidationForm.comp
 import Experience_0006 from '@pages/asyncValidationForm/asyncValidationForm.component';
 import Experience_0007 from '@pages/httpCommunication/httpCommunication.component';
 import Experience_0008 from '@pages/interceptorRequests/interceptorRequests.component';
+import Experience_0009 from '@pages/routerParams/routerParams.component';
 
 const routes: Routes = [
+  { path: 'experience_0009', component: Experience_0009 },
   { path: 'experience_0008', component: Experience_0008 },
   { path: 'experience_0007', component: Experience_0007 },
   { path: 'experience_0006', component: Experience_0006 },
@@ -20,6 +22,7 @@ const routes: Routes = [
   { path: 'experience_0002', component: Experience_0002 },
   { path: 'experience_0001', component: Experience_0001 },
   { path: '', component: Experience_0001 },
+  { path: '**', component: Experience_0001 },
 ];
 
 @NgModule({

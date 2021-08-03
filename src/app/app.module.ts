@@ -11,6 +11,7 @@ import Experience_0005 from '@pages/crossValidationForm/crossValidationForm.comp
 import Experience_0006 from '@pages/asyncValidationForm/asyncValidationForm.component';
 import Experience_0007 from '@pages/httpCommunication/httpCommunication.component';
 import Experience_0008 from '@pages/interceptorRequests/interceptorRequests.component';
+import Experience_0009 from '@pages/routerParams/routerParams.component';
 import { AppRoutingModule } from '@app/app-routing.module';
 import { AppComponent } from '@app/app.component';
 
@@ -27,6 +28,7 @@ import { NoopInterceptor } from '@pages/interceptorRequests/noopInterceptor.serv
     Experience_0006,
     Experience_0007,
     Experience_0008,
+    Experience_0009,
   ],
   imports: [BrowserModule, FormsModule, ReactiveFormsModule, AppRoutingModule, HttpClientModule, HttpClientJsonpModule],
   providers: [{ provide: HTTP_INTERCEPTORS, useClass: NoopInterceptor, multi: true }],
