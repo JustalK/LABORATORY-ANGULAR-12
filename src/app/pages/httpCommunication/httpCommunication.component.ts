@@ -20,4 +20,22 @@ export default class CustomComponent {
       };
     });
   }
+
+  showConfigResponse() {
+    this.configService.getConfigResponse().subscribe((data) => {
+      console.log(data);
+    });
+  }
+
+  showHttpJson() {
+    this.configService.getHttpCall().subscribe((data) => {
+      console.log(data);
+    });
+  }
+
+  failHttpJson() {
+    this.configService.getFailHttpCall().subscribe((data) => {
+      console.log(data);
+    });
+  }
 }

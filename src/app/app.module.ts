@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import { HttpClientModule } from '@angular/common/http';
+import { HttpClientModule, HttpClientJsonpModule } from '@angular/common/http';
 
 import Experience_0001 from '@pages/formGroup/formGroup.component';
 import Experience_0002 from '@pages/formControl/formControl.component';
@@ -24,7 +24,7 @@ import { AppComponent } from '@app/app.component';
     Experience_0006,
     Experience_0007,
   ],
-  imports: [BrowserModule, FormsModule, ReactiveFormsModule, AppRoutingModule, HttpClientModule],
+  imports: [BrowserModule, FormsModule, ReactiveFormsModule, AppRoutingModule, HttpClientModule, HttpClientJsonpModule],
   providers: [],
   bootstrap: [AppComponent],
 })
