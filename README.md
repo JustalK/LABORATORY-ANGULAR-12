@@ -27,6 +27,7 @@ I explain with all the details how I build the project and my way of working.
 ## Links
 
 - [Marmiton](https://guide-angular.wishtack.io/angular/)
+- [tektutorialshub](https://www.tektutorialshub.com/angular/angular-providers/)
 
 ## Documentation
 #### Code documentation
