@@ -1,6 +1,8 @@
-# ANGULAR APP TEMPLATE
+# LABORATORY ANGULAR 12
 
 ## Goal
+
+This project is my playground for testing and experimenting with angular. That's basically a project showing some aspect of `Angular` that I am trying to master. Most of the experience come from the official documentation but as it is sometime hard to understand, I am going around and try to find a better tutorial.
 
 ## Plan of the presentation
 
@@ -27,6 +29,7 @@ I explain with all the details how I build the project and my way of working.
 - **Experience9**: Playing with the router and params
 - **Experience10**: Requesting a typed response
 - **Experience11**: Playing with useValue, useFactory...
+- **Experience12**: ClassInjection (better than token injection)
 
 ## Links
 
