@@ -23,11 +23,17 @@ I explain with all the details how I build the project and my way of working.
 - **Experience5**: Cross validation over a reactive form
 - **Experience6**: Async validation over a reactive form
 - **Experience7**: Requesting a typed response
+- **Experience8**: Making an interceptor using HTTP_INTERCEPTORS
+- **Experience9**: Playing with the router and params
+- **Experience10**: Requesting a typed response
+- **Experience11**: Playing with useValue, useFactory...
 
 ## Links
 
 - [Marmiton](https://guide-angular.wishtack.io/angular/)
 - [tektutorialshub](https://www.tektutorialshub.com/angular/angular-providers/)
+- [Provider DI](https://offering.solutions/blog/articles/2018/08/17/using-useclass-usefactory-usevalue-useexisting-with-treeshakeable-providers-in-angular/#usevalue)
+- [Freaky Joly](https://www.freakyjolly.com/angular-providers-usevalue-useclass-usefactory-tutorial-with-examples/)
 
 ## Documentation
 #### Code documentation

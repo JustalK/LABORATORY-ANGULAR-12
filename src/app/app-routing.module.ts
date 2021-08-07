@@ -10,10 +10,12 @@ import Experience_0006 from '@pages/asyncValidationForm/asyncValidationForm.comp
 import Experience_0007 from '@pages/httpCommunication/httpCommunication.component';
 import Experience_0008 from '@pages/interceptorRequests/interceptorRequests.component';
 import Experience_0009 from '@pages/routerParams/routerParams.component';
-import Experience_00010 from '@pages/dependancyInjection/dependancyInjection.component';
+import Experience_0010 from '@pages/dependancyInjection/dependancyInjection.component';
+import Experience_0011 from '@pages/useDI/useDI.component';
 
 const routes: Routes = [
-  { path: 'experience_00010', component: Experience_00010 },
+  { path: 'experience_0011', component: Experience_0011 },
+  { path: 'experience_0010', component: Experience_0010 },
   { path: 'experience_0009', component: Experience_0009 },
   { path: 'experience_0008', component: Experience_0008 },
   { path: 'experience_0007', component: Experience_0007 },

@@ -12,8 +12,9 @@ import Experience_0006 from '@pages/asyncValidationForm/asyncValidationForm.comp
 import Experience_0007 from '@pages/httpCommunication/httpCommunication.component';
 import Experience_0008 from '@pages/interceptorRequests/interceptorRequests.component';
 import Experience_0009 from '@pages/routerParams/routerParams.component';
-import Experience_00010 from '@pages/dependancyInjection/dependancyInjection.component';
-import Experience_00010_Children from '@pages/dependancyInjection/dependancyInjectionChildren.component';
+import Experience_0010 from '@pages/dependancyInjection/dependancyInjection.component';
+import Experience_0010_Children from '@pages/dependancyInjection/dependancyInjectionChildren.component';
+import Experience_0011 from '@pages/useDI/useDI.component';
 import { AppRoutingModule } from '@app/app-routing.module';
 import { AppComponent } from '@app/app.component';
 
@@ -32,12 +33,14 @@ import { DependancyInjectionService } from '@pages/dependancyInjection/dependanc
     Experience_0007,
     Experience_0008,
     Experience_0009,
-    Experience_00010,
+    Experience_0010,
+    Experience_0011,
   ],
   imports: [BrowserModule, FormsModule, ReactiveFormsModule, AppRoutingModule, HttpClientModule, HttpClientJsonpModule],
   providers: [
     { provide: HTTP_INTERCEPTORS, useClass: NoopInterceptor, multi: true },
-    [{ provide: DependancyInjectionService, useClass: Experience_00010_Children }],
+    [{ provide: DependancyInjectionService, useClass: Experience_0010_Children }],
+    { provide: 'PROVIDERS_USE_VALUE', useValue: true },
   ],
   bootstrap: [AppComponent],
 })
