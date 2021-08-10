@@ -34,7 +34,7 @@ I explain with all the details how I build the project and my way of working.
 ## Links
 
 - [Marmiton](https://guide-angular.wishtack.io/angular/)
-- [tektutorialshub](https://www.tektutorialshub.com/angular/angular-providers/)
+- [tektutorialshub](https://www.tektutorialshub.com/angular-tutorial/#seo-angular)
 - [Provider DI](https://offering.solutions/blog/articles/2018/08/17/using-useclass-usefactory-usevalue-useexisting-with-treeshakeable-providers-in-angular/#usevalue)
 - [Freaky Joly](https://www.freakyjolly.com/angular-providers-usevalue-useclass-usefactory-tutorial-with-examples/)
 

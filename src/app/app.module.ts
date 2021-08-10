@@ -16,6 +16,7 @@ import Experience_0010 from '@pages/dependancyInjection/dependancyInjection.comp
 import Experience_0010_Children from '@pages/dependancyInjection/dependancyInjectionChildren.component';
 import Experience_0011 from '@pages/useDI/useDI.component';
 import Experience_0012 from '@pages/classInjection/classInjection.component';
+import Experience_0013 from '@pages/eventPayload/eventPayload.component';
 import { AppRoutingModule } from '@app/app-routing.module';
 import { AppComponent } from '@app/app.component';
 
@@ -39,6 +40,7 @@ import ConfigService from '@pages/classInjection/config.service';
     Experience_0010,
     Experience_0011,
     Experience_0012,
+    Experience_0013,
   ],
   imports: [BrowserModule, FormsModule, ReactiveFormsModule, AppRoutingModule, HttpClientModule, HttpClientJsonpModule],
   providers: [

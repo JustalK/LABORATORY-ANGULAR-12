@@ -13,8 +13,10 @@ import Experience_0009 from '@pages/routerParams/routerParams.component';
 import Experience_0010 from '@pages/dependancyInjection/dependancyInjection.component';
 import Experience_0011 from '@pages/useDI/useDI.component';
 import Experience_0012 from '@pages/classInjection/classInjection.component';
+import Experience_0013 from '@pages/eventPayload/eventPayload.component';
 
 const routes: Routes = [
+  { path: 'experience_0013', component: Experience_0013 },
   { path: 'experience_0012', component: Experience_0012 },
   { path: 'experience_0011', component: Experience_0011 },
   { path: 'experience_0010', component: Experience_0010 },

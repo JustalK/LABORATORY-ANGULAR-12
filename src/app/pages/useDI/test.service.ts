@@ -1,5 +1,4 @@
 import { Injectable } from '@angular/core';
-import TestService2 from './test2.service';
 import TestService3 from './test3.service';
 
 @Injectable({
