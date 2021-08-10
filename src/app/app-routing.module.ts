@@ -14,8 +14,10 @@ import Experience_0010 from '@pages/dependancyInjection/dependancyInjection.comp
 import Experience_0011 from '@pages/useDI/useDI.component';
 import Experience_0012 from '@pages/classInjection/classInjection.component';
 import Experience_0013 from '@pages/eventPayload/eventPayload.component';
+import Experience_0014 from '@pages/directives/directives.component';
 
 const routes: Routes = [
+  { path: 'experience_0014', component: Experience_0014 },
   { path: 'experience_0013', component: Experience_0013 },
   { path: 'experience_0012', component: Experience_0012 },
   { path: 'experience_0011', component: Experience_0011 },
