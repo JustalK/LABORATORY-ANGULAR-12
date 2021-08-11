@@ -1,19 +1,19 @@
 <div>event</div>
-<input (input)="handleInput($event)">
-<p>Value: {{value}}</p>
+<input (input)="handleInput($event)" />
+<p>Value: {{ value }}</p>
 
 <div>#Element</div>
-<input #el (input)="handleInput2(el)">
-<p>Value: {{value2}}</p>
+<input #el (input)="handleInput2(el)" />
+<p>Value: {{ value2 }}</p>
 
 <div>ngModel</div>
-<input type="text" name="value3" [(ngModel)]="value3">
-<p> Value: {{value3}}</p>
+<input type="text" name="value3" [(ngModel)]="value3" />
+<p>Value: {{ value3 }}</p>
 
 <div>ngModelChange (direct value)</div>
-<input type="text" name="name" ngModel (ngModelChange)="handleInput4($event)">
-<p> Value: {{value4}}</p>
+<input type="text" name="name" ngModel (ngModelChange)="handleInput4($event)" />
+<p>Value: {{ value4 }}</p>
 
 <div>change (trigger once focus lost)</div>
-<input type="text" name="name" (change)="handleInput5($event)">
-<p> Value: {{value5}}</p>
+<input type="text" name="name" (change)="handleInput5($event)" />
+<p>Value: {{ value5 }}</p>
