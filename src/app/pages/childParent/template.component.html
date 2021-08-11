@@ -1,0 +1,5 @@
+<button (click)="increment()">Increment Values</button>
+<div>
+  <app-childparent-child [myValue]="parentValue" [count]="parentCount" (countChanged)="countChangedHandler($event)" #el></app-childparent-child>
+  childValue: {{ el.childValue }}
+</div>

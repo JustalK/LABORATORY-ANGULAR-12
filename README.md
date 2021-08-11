@@ -31,6 +31,9 @@ I explain with all the details how I build the project and my way of working.
 - **Experience11**: Playing with useValue, useFactory...
 - **Experience12**: ClassInjection (better than token injection)
 - **Experience13**: eventPayload (Playing with all the event possible on an input)
+- **Experience14**: Directive (ngif, ngfor, ngClass)
+- **Experience15**: pipe (and pipe component)
+- **Experience16**: Communication Child-Parent
 
 ## Links
 
