@@ -18,6 +18,7 @@ import Experience_0011 from '@pages/useDI/useDI.component';
 import Experience_0012 from '@pages/classInjection/classInjection.component';
 import Experience_0013 from '@pages/eventPayload/eventPayload.component';
 import Experience_0014 from '@pages/directives/directives.component';
+import Experience_0015 from '@pages/pipes/pipes.component';
 import { AppRoutingModule } from '@app/app-routing.module';
 import { AppComponent } from '@app/app.component';
 
@@ -25,6 +26,8 @@ import { NoopInterceptor } from '@pages/interceptorRequests/noopInterceptor.serv
 import { DependancyInjectionService } from '@pages/dependancyInjection/dependancyInjection.service';
 import { Config } from '@pages/classInjection/config';
 import ConfigService from '@pages/classInjection/config.service';
+
+import { DecimalPipe } from '@angular/common';
 
 @NgModule({
   declarations: [
@@ -43,6 +46,7 @@ import ConfigService from '@pages/classInjection/config.service';
     Experience_0012,
     Experience_0013,
     Experience_0014,
+    Experience_0015,
   ],
   imports: [BrowserModule, FormsModule, ReactiveFormsModule, AppRoutingModule, HttpClientModule, HttpClientJsonpModule],
   providers: [
@@ -50,6 +54,7 @@ import ConfigService from '@pages/classInjection/config.service';
     [{ provide: DependancyInjectionService, useClass: Experience_0010_Children }],
     { provide: 'PROVIDERS_USE_VALUE', useValue: true },
     { provide: Config, useClass: ConfigService },
+    DecimalPipe,
   ],
   bootstrap: [AppComponent],
 })

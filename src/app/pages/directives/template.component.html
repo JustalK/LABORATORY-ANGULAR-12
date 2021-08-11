@@ -6,19 +6,11 @@
 
 <button (click)="handleIsVisible()">Change isVisible</button>
 
-<div *ngIf="isVisible; else elseBlock">
-  Test on the ngIf (isVisible)
-</div>
+<div *ngIf="isVisible; else elseBlock">Test on the ngIf (isVisible)</div>
 
-<div [hidden]="!isVisible">
-  Test on the ngIf (hidden) (display: none)
-</div>
+<div [hidden]="!isVisible">Test on the ngIf (hidden) (display: none)</div>
 
-<ng-template #elseBlock>
-    Test on the ng-template (!isVisible)
-</ng-template>
+<ng-template #elseBlock> Test on the ng-template (!isVisible) </ng-template>
 
-<div [ngClass]="cssClasses">
-  This is a sentance affected by class dynamically
-</div>
+<div [ngClass]="cssClasses">This is a sentance affected by class dynamically</div>
 <button (click)="changeClasses()">Change classes</button>

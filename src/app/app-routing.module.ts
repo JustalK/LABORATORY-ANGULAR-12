@@ -15,8 +15,10 @@ import Experience_0011 from '@pages/useDI/useDI.component';
 import Experience_0012 from '@pages/classInjection/classInjection.component';
 import Experience_0013 from '@pages/eventPayload/eventPayload.component';
 import Experience_0014 from '@pages/directives/directives.component';
+import Experience_0015 from '@pages/pipes/pipes.component';
 
 const routes: Routes = [
+  { path: 'experience_0015', component: Experience_0015 },
   { path: 'experience_0014', component: Experience_0014 },
   { path: 'experience_0013', component: Experience_0013 },
   { path: 'experience_0012', component: Experience_0012 },
