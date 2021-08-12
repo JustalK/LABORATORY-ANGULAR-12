@@ -17,8 +17,10 @@ import Experience_0013 from '@pages/eventPayload/eventPayload.component';
 import Experience_0014 from '@pages/directives/directives.component';
 import Experience_0015 from '@pages/pipes/pipes.component';
 import Experience_0016 from '@pages/childParent/parent.component';
+import Experience_0017 from '@pages/formStatus/formStatus.component';
 
 const routes: Routes = [
+  { path: 'experience_0017', component: Experience_0017 },
   { path: 'experience_0016', component: Experience_0016 },
   { path: 'experience_0015', component: Experience_0015 },
   { path: 'experience_0014', component: Experience_0014 },

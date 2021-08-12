@@ -1,0 +1,20 @@
+<button (click)="changeName()">Change name with event</button>
+<button (click)="changeNameNoEvent()">Change name without event</button>
+<button (click)="disableName()">Disable name</button>
+<form [formGroup]="form" (ngSubmit)="callingFunction()">
+  <div>
+    <label>
+      Name:
+      <input type="text" formControlName="name" />
+    </label>
+  </div>
+  <div>
+    <label>
+      Second Name:
+      <input type="text" formControlName="secondname" />
+    </label>
+  </div>
+  <div>
+    <button type="submit">Submit Application</button>
+  </div>
+</form>

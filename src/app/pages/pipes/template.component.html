@@ -1,4 +1,4 @@
-<div *ngIf="(apiData | async) as datas; else elseBlock">
+<div *ngIf="apiData | async as datas; else elseBlock">
   <ul>
     <li *ngFor="let data of datas.response.results">
       {{ data.email }}
@@ -6,17 +6,11 @@
   </ul>
 </div>
 
-<ng-template #elseBlock>
-  Observable is loading. Please wait
-</ng-template>
-
+<ng-template #elseBlock> Observable is loading. Please wait </ng-template>
 
 <ul>
-  <li *ngFor="let item of obj | keyvalue">
-    {{item.key}} ---> {{ item.value }}
-  </li>
+  <li *ngFor="let item of obj | keyvalue">{{ item.key }} ---> {{ item.value }}</li>
 </ul>
-
 
 <div>{{ myNumber }}</div>
 <div>{{ myNumber2 | number: '1.2-2' }}</div>

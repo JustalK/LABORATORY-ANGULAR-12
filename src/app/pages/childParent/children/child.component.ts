@@ -10,6 +10,7 @@ export default class CustomComponent implements OnChanges {
   private _count = 0;
 
   private childValue = 0;
+
   @Output() countChanged: EventEmitter<number> = new EventEmitter();
 
   @Input()
