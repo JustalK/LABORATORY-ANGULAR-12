@@ -1,5 +1,5 @@
 import { NgModule } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
+import { BrowserModule, Title, Meta } from '@angular/platform-browser';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule, HttpClientJsonpModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 
@@ -22,6 +22,7 @@ import Experience_0015 from '@pages/pipes/pipes.component';
 import Experience_0016 from '@pages/childParent/parent.component';
 import Experience_0016_Children from '@pages/childParent/children/child.component';
 import Experience_0017 from '@pages/formStatus/formStatus.component';
+import Experience_0018 from '@pages/seo/seo.component';
 import { AppRoutingModule } from '@app/app-routing.module';
 import { AppComponent } from '@app/app.component';
 
@@ -53,6 +54,7 @@ import { DecimalPipe } from '@angular/common';
     Experience_0016,
     Experience_0016_Children,
     Experience_0017,
+    Experience_0018,
   ],
   imports: [BrowserModule, FormsModule, ReactiveFormsModule, AppRoutingModule, HttpClientModule, HttpClientJsonpModule],
   providers: [
@@ -61,6 +63,8 @@ import { DecimalPipe } from '@angular/common';
     { provide: 'PROVIDERS_USE_VALUE', useValue: true },
     { provide: Config, useClass: ConfigService },
     DecimalPipe,
+    Title,
+    Meta,
   ],
   bootstrap: [AppComponent],
 })
