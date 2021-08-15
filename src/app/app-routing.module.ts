@@ -25,7 +25,7 @@ const routes: Routes = [
   {
     path: 'experience_0019',
     component: Experience_0019,
-    data: { title: 'Title By App Routing', descrption: 'Description Component 19' },
+    data: { title: 'Title By App Routing', descrption: 'Description Component 19', canonical: '/experience_0001' },
   },
   { path: 'experience_0018', component: Experience_0018 },
   { path: 'experience_0017', component: Experience_0017 },
