@@ -34,6 +34,9 @@ I explain with all the details how I build the project and my way of working.
 - **Experience14**: Directive (ngif, ngfor, ngClass)
 - **Experience15**: pipe (and pipe component)
 - **Experience16**: Communication Child-Parent
+- **Experience17**: Playing with the status of a form
+- **Experience18**: Seo in the component
+- **Experience19**: Seo in App component
 
 ## Links
 
