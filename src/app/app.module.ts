@@ -23,6 +23,7 @@ import Experience_0016 from '@pages/childParent/parent.component';
 import Experience_0016_Children from '@pages/childParent/children/child.component';
 import Experience_0017 from '@pages/formStatus/formStatus.component';
 import Experience_0018 from '@pages/seo/seo.component';
+import Experience_0019 from '@pages/seoRoutes/seoRoutes.component';
 import { AppRoutingModule } from '@app/app-routing.module';
 import { AppComponent } from '@app/app.component';
 
@@ -55,6 +56,7 @@ import { DecimalPipe } from '@angular/common';
     Experience_0016_Children,
     Experience_0017,
     Experience_0018,
+    Experience_0019,
   ],
   imports: [BrowserModule, FormsModule, ReactiveFormsModule, AppRoutingModule, HttpClientModule, HttpClientJsonpModule],
   providers: [

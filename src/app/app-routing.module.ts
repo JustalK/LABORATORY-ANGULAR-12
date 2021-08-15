@@ -19,8 +19,14 @@ import Experience_0015 from '@pages/pipes/pipes.component';
 import Experience_0016 from '@pages/childParent/parent.component';
 import Experience_0017 from '@pages/formStatus/formStatus.component';
 import Experience_0018 from '@pages/seo/seo.component';
+import Experience_0019 from '@pages/seoRoutes/seoRoutes.component';
 
 const routes: Routes = [
+  {
+    path: 'experience_0019',
+    component: Experience_0019,
+    data: { title: 'Title By App Routing', descrption: 'Description Component 19' },
+  },
   { path: 'experience_0018', component: Experience_0018 },
   { path: 'experience_0017', component: Experience_0017 },
   { path: 'experience_0016', component: Experience_0016 },
