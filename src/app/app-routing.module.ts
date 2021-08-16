@@ -20,8 +20,10 @@ import Experience_0016 from '@pages/childParent/parent.component';
 import Experience_0017 from '@pages/formStatus/formStatus.component';
 import Experience_0018 from '@pages/seo/seo.component';
 import Experience_0019 from '@pages/seoRoutes/seoRoutes.component';
+import Experience_0020 from '@pages/globalErrorHandler/globalErrorHandler.component';
 
 const routes: Routes = [
+  { path: 'experience_0020', component: Experience_0020 },
   {
     path: 'experience_0019',
     component: Experience_0019,

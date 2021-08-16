@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { NgModule, ErrorHandler } from '@angular/core';
 import { BrowserModule, Title, Meta } from '@angular/platform-browser';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule, HttpClientJsonpModule, HTTP_INTERCEPTORS } from '@angular/common/http';
@@ -24,6 +24,8 @@ import Experience_0016_Children from '@pages/childParent/children/child.componen
 import Experience_0017 from '@pages/formStatus/formStatus.component';
 import Experience_0018 from '@pages/seo/seo.component';
 import Experience_0019 from '@pages/seoRoutes/seoRoutes.component';
+import Experience_0020 from '@pages/globalErrorHandler/globalErrorHandler.component';
+import { GlobalErrorHandlerService } from '@pages/globalErrorHandler/globalErrorHandler.service';
 import { AppRoutingModule } from '@app/app-routing.module';
 import { AppComponent } from '@app/app.component';
 
@@ -57,6 +59,7 @@ import { DecimalPipe } from '@angular/common';
     Experience_0017,
     Experience_0018,
     Experience_0019,
+    Experience_0020,
   ],
   imports: [BrowserModule, FormsModule, ReactiveFormsModule, AppRoutingModule, HttpClientModule, HttpClientJsonpModule],
   providers: [
@@ -64,6 +67,7 @@ import { DecimalPipe } from '@angular/common';
     [{ provide: DependancyInjectionService, useClass: Experience_0010_Children }],
     { provide: 'PROVIDERS_USE_VALUE', useValue: true },
     { provide: Config, useClass: ConfigService },
+    { provide: ErrorHandler, useClass: GlobalErrorHandlerService },
     DecimalPipe,
     Title,
     Meta,
